@@ -65,11 +65,11 @@ app.use((req, res, next) => {
 
 
 //ROUTES
-// const index = require('./routes/index');
+const index = require('./routes/index');
 const auth = require('./routes/auth');
 const profile = require('./routes/profile');
 
-// app.use('/', index);
+app.use('/', index);
 app.use('/', auth);
 app.use('/profile', profile)
 
