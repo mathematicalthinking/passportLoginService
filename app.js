@@ -35,8 +35,6 @@ app.use(expressLayouts);
 
 // COOKIES
 const LOGIN_COOKIE = 'loginSessionUser';
-app.use(cookieParser());
-
 
 //PASSPORT
 configure(passport);
