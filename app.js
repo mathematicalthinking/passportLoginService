@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
 const http = require('http');
 const needle = require('needle');
 const logger = require('morgan');
@@ -27,7 +26,7 @@ app.use(session({
 }));
 
 
-//VIEW ENGINE
+//VIEW ENGINEong
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.set('layout', 'layouts/main-layout');
